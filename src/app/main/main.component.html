@@ -1,0 +1,66 @@
+<body>
+  <div  class="container">
+
+
+  <br>
+
+
+  <h1>  Welcome to Grocery</h1>
+
+  <br>
+
+  <h3> Fill your Details to Get Started</h3>
+  <br>
+
+
+
+
+  <form #userform="ngForm" >
+
+
+  <div  class="form-group">
+  <label> Name :</label>
+  <input type="text" size="60" name="Name" #name1 required #name="ngModel" [class.is-invalid]="name.invalid && name.touched"  [(ngModel)]="userform.name" class="form-control">
+<small class="text-danger"  [class.d-none]="name.valid||name.untouched" >  Name is required  </small>
+
+  </div>
+
+  <div  class="form-group">
+    <label> Phone number :</label>
+    <input type="tel" size="60" #phonename name="phone" #phone="ngModel" pattern="^\d{10}$" [class.is-invalid]="phone.invalid && phone.touched" ngModel class="form-control">
+
+    <small class="text-danger"  [class.d-none]="phone.valid||name.untouched" >  phone no. should be 10 digit  </small>
+
+  </div>
+
+  <div ngModelGroup="address">
+      <div  class="form-group">
+      <label> Address :</label>
+      <input type="text"size="60" #addressname name="address"  #address="ngModel" required  [class.is-invalid]="address.invalid && address.touched" class="form-control" ngModel >
+      <small class="text-danger"  [class.d-none]="address.valid||address.untouched" >  address is required  </small>
+    </div>
+  <div  class="form-group">
+      <label> City :</label>
+      <input type="text"size="60"  #cityname name="city" #city="ngModel" required [class.is-invalid]="city.invalid && city.touched" class="form-control" ngModel  >
+      <small class="text-danger"  [class.d-none]="city.valid||city.untouched" >  city is required  </small>
+    </div>
+
+  <div  class="form-group">
+      <label> Pincode :</label>
+      <input type="text" size="60" #pincode name="pincode" required #pin="ngModel"   pattern="^\d{6}$"  [class.is-invalid]="pin.invalid && pin.touched"class="form-control" ngModel>
+      <small class="text-danger"  [class.d-none]="pin.valid||pin.untouched" >  pin should be six digits  </small>
+    </div>
+
+
+
+  </div>
+
+
+
+  <button type="submit" (click)="update(name1.value , phonename.value , addressname.value , cityname.value , pincode.value)" class="btn btn-primary" [disabled]="!userform.form.valid" routerLink="/items"> Get Started</button>
+</form>
+<br>
+<br>
+</div>
+  </body>
+

@@ -1,0 +1,134 @@
+h1 {
+
+  text-align: center;
+  font-family: "arial";
+  text-shadow: 2px 2px 4px grey;
+  color:black;
+}
+
+body{
+
+  background-image:  linear-gradient(rgba(255,225,225,0.3) ,rgba(255,225,225,0.3)) , url("back.jpg"); /* fallback */
+
+height: 100%;
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+/*
+  background-image: url("food3.jpg");
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 5000px; */
+}
+
+.container {
+  width: 800px;
+
+}
+
+.container input {
+  width: 100%;
+
+}
+button {
+  margin-left:840px;
+
+
+  background-color: red;
+}
+
+#b2
+{
+margin-left:680px;
+
+}
+
+.veg
+{
+margin-left:20px;
+font-size:20px;
+border :2px solid red;
+color:red;
+padding:4px;
+background-color: white;
+}
+
+.fruit
+{
+border: 5px solid black;
+
+}
+hr{
+width:1000px;
+border-width: 5px;
+border-color: red;
+
+}
+
+
+.card {
+  /* Add shadows to create the "card" effect */
+   width:320px;
+   height: 300px;
+  box-shadow: 5px 4px 10px 2px rgba(0,0,0,0.2);
+  transition: 0.3s;
+
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px  rgba(0,0,0,0.2);
+}
+
+.text
+{
+  text-align: center;
+  font-size: 30px;
+  margin-top:30px;
+  color:red !important;
+}
+.text1
+{
+  text-align: center;
+  font-size: 30px;
+  margin-top:15px;
+  color:red !important;
+}
+/* Add some padding inside the card container */
+
+
+.column {
+  float: left;
+  padding-left:50px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+
+.row
+{
+  margin-left:360px;
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+a
+{
+color :red;
+text-decoration: none;
+
+
+}
+a:hover {
+  color: hotpink;
+}

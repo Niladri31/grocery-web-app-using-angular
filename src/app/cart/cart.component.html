@@ -1,0 +1,66 @@
+<html>
+<body>
+<h3>Cart Info</h3>
+<div class="but">
+<a id="for" class="btn btn-primary" (click)="back()">Return to shopping</a>
+
+<a id="back" class="btn btn-primary"  [routerLink]="['/finished' ]" >Finish Shopping</a>
+</div>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Option</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Quantity</th>
+
+      <th scope="col">Sub Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of items" >
+
+      <td><a class="btn btn-primary" (click)="remove(item.product.id)">Remove</a></td>
+      <td>{{item.product.name}}</td>
+      <td>{{item.product.price |  currency:"₹" }}</td>
+
+      <td > {{item.quantity }} </td>
+
+      <td>{{item.product.price *item.quantity | currency:"₹"}}</td>
+
+    </tr>
+
+    <tr>
+      <td colspan="4" style="font-weight: bold" >Total</td>
+      <td>{{total | currency:"₹"}}</td>
+  </tr>
+
+  </tbody>
+</table>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+
+<br>
+
+</body>
+</html>
+

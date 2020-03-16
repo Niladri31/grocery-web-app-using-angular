@@ -1,0 +1,41 @@
+
+h3{
+text-align: center;
+font-size: 50px;
+
+
+}
+
+.but {
+  margin-left:20px;
+  color:white;
+  display:inline-block;
+margin-bottom: 20px;
+}
+
+#back
+{
+margin-left:1090px;
+
+}
+
+body{
+
+  background-image: url("baa.jpg"); /* fallback */
+
+/* Full height */
+
+/* Center and scale the image nicely */
+background-repeat: no-repeat;
+background-size: cover ;
+background-size: 100% 100%;
+  }
+
+html{
+
+  height: 100%;
+}
+td{
+
+  font-weight: bold;
+}

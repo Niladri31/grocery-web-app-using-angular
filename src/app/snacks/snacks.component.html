@@ -1,0 +1,162 @@
+<body>
+
+
+  <div>
+  <h1>  Snacks And Beverages </h1>
+
+
+  <a [routerLink]="['/items' ]" class="btn btn-primary">Go Back</a>
+  <br>
+
+  <br>
+
+  <div class="card-deck">
+    <div class="card">
+      <img src="assets/Images/noodles.jpg" height="300" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Noodles</h5>
+        <p class="card-text">Noodles at Rs 30 per packet only</p>
+        <input type="text"   #quan7 size="30"  value="" id="quan" placeholder=" Enter Quantity in unit" (keyup)="0"> <br>
+        <br>
+              <a [routerLink]="['/cart',  {id: 31 , quantity :quan7.value  } ]" class="btn btn-primary">Add to Cart</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/Images/cookies.jpg" height="300"class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Biscuits and Cookies</h5>
+        <p class="card-text">Biscuits and cookies  at Rs 30 per packet</p>
+        <input type="text"   #quan8 size="30"  value="" id="quan" placeholder="Enter Quantity in unit" (keyup)="0"> <br>
+        <br>
+              <a [routerLink]="['/cart',  {id: 32 , quantity :quan8.value  } ]" class="btn btn-primary">Add to Cart</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/Images/oats.jpg" height="300" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Oats</h5>
+        <p class="card-text">Oats at 100 per kg</p>
+        <input type="text"   #quan9 size="30"  value="" id="quan" placeholder=" Enter Quantity in kg (if gm then  e.g 0.5)" (keyup)="0"> <br>
+        <br>
+              <a [routerLink]="['/cart',  {id: 33 , quantity :quan9.value  } ]" class="btn btn-primary">Add to Cart</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/Images/chips.jpg" height="300"class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="Mango">Chips and Namkeens</h5>
+        <p class="card-text">Chip and Namkeen at 20 per packet</p>
+        <input type="text"   #quan10 size="30"  value="" id="quan" placeholder=" Enter Quantity in unit" (keyup)="0"> <br>
+      <br>
+            <a [routerLink]="['/cart',  {id: 34 , quantity :quan10.value  } ]" class="btn btn-primary">Add to Cart</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+
+
+
+  <br>
+
+  <div class="card-deck">
+    <div class="card">
+      <img src="assets/Images/sauce.jpg" height="300" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Ketchup</h5>
+        <p class="card-text">Ketchup at 50 per litre</p>
+        <input type="text"   #quan11 size="30"  value="" id="quan" placeholder=" Enter Quantity in lt (if ml then  e.g 0.5)" (keyup)="0"> <br>
+        <br>
+              <a [routerLink]="['/cart',  {id: 35 , quantity :quan11.value  } ]" class="btn btn-primary">Add to Cart</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/Images/cadbury.jpg" height="300"class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Cadbury and chocolates</h5>
+        <p class="card-text">Cadbury and chocolates at 65 per packet</p>
+        <input type="text"   #quan12 size="30"  value="" id="quan" placeholder="Enter Quantity in unit" (keyup)="0"> <br>
+        <br>
+              <a [routerLink]="['/cart',  {id: 36 , quantity :quan12.value  } ]" class="btn btn-primary">Add to Cart</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/Images/pickle.jpg" height="300" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Pickles </h5>
+        <p class="card-text">Pickles at 120 per kilogram</p>
+        <input type="text"   #quan13 size="30"  value="" id="quan" placeholder=" Enter Quantity in kg (if gm then  e.g 0.5)" (keyup)="0"> <br>
+      <br>
+            <a [routerLink]="['/cart',  {id: 37 , quantity :quan13.value  } ]" class="btn btn-primary">Add to Cart</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/Images/cofee.jpg" height="300"class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Coffee</h5>
+        <p class="card-text">Coffee at 150 for 50 grams </p>
+        <input type="text"   #quan14 size="30"  value="" id="quan" placeholder=" Enter Quantity in unit" (keyup)="0"> <br>
+      <br>
+            <a [routerLink]="['/cart',  {id: 38 , quantity :quan14.value  } ]" class="btn btn-primary">Add to Cart</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+
+  <br>
+
+  <div class="card-deck">
+    <div class="card">
+      <img src="assets/Images/tea.jpg" height="300" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Tea</h5>
+        <p class="card-text">Tea at Rs 110 for 250 gms</p>
+        <input type="text"   #quan15 size="30"  value="" id="quan" placeholder=" Enter Quantity in unit" (keyup)="0"> <br>
+        <br>
+              <a [routerLink]="['/cart',  {id: 39 , quantity :quan15.value  } ]" class="btn btn-primary">Add to Cart</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/Images/colddrinks.jpg" height="300"class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Cold Drinks</h5>
+        <p class="card-text">Cold Drinks at 55 per litre</p>
+        <input type="text"   #quan16 size="30"  value="" id="quan" placeholder=" Enter Quantity in lt (if ml then  e.g 0.5)" (keyup)="0"> <br>
+        <br>
+              <a [routerLink]="['/cart',  {id: 40 , quantity :quan16.value  } ]" class="btn btn-primary">Add to Cart</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+
+  </div>
+
+  </body>

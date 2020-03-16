@@ -1,0 +1,132 @@
+<body>
+
+
+  <div>
+  <h1>  Miscellaneous items </h1>
+
+  <a [routerLink]="['/items' ]" class="btn btn-primary">Go Back</a>
+
+  <br>
+
+  <br>
+
+  <div class="card-deck">
+    <div class="card">
+      <img src="assets/Images/soap.jpeg" height="300" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Bathing Soap</h5>
+        <p class="card-text">Bathing Soap at Rs 40 per unit</p>
+        <input type="text"   #quan16 size="30"  value="" id="quan" placeholder=" Enter Quantity in unit" (keyup)="0"> <br>
+        <br>
+              <a [routerLink]="['/cart',  {id: 53 , quantity :quan16.value  } ]" class="btn btn-primary">Add to Cart</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/Images/hair oil.jpg" height="300"class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hair Oil</h5>
+        <p class="card-text">Hair oil at Rs 220 per 600ml</p>
+        <input type="text"   #quan17 size="30"  value="" id="quan" placeholder=" Enter Quantity in unit" (keyup)="0"> <br>
+        <br>
+              <a [routerLink]="['/cart',  {id: 54 , quantity :quan17.value  } ]" class="btn btn-primary">Add to Cart</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/Images/shampoo.jpg" height="300" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"> Shampoo</h5>
+        <p class="card-text">Shampoo at Rs 145 per 180 ml </p>
+        <input type="text"   #quan18 size="30"  value="" id="quan" placeholder=" Enter Quantity in unit" (keyup)="0"> <br>
+        <br>
+              <a [routerLink]="['/cart',  {id: 55 , quantity :quan18.value  } ]" class="btn btn-primary">Add to Cart</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/Images/homecleaner.jpg" height="300"class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="Mango">Home Cleaner </h5>
+        <p class="card-text">Home Cleaner at Rs 100 per unit</p>
+        <input type="text"   #quan19 size="30"  value="" id="quan" placeholder=" Enter Quantity in unit" (keyup)="0"> <br>
+        <br>
+              <a [routerLink]="['/cart',  {id: 56 , quantity :quan19.value  } ]" class="btn btn-primary">Add to Cart</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+
+
+
+  <br>
+
+  <div class="card-deck">
+    <div class="card">
+      <img src="assets/Images/bathroomcleaner.jpg" height="300" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Bath Room Cleaner</h5>
+        <p class="card-text">Bath Room Cleaner at Rs 100 per unit</p>
+        <input type="text"   #quan20 size="30"  value="" id="quan" placeholder=" Enter Quantity in unit" (keyup)="0"> <br>
+        <br>
+              <a [routerLink]="['/cart',  {id: 49 , quantity :quan20.value  } ]" class="btn btn-primary">Add to Cart</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/Images/clothcleaner.jpg" height="300"class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Detrergent liquid</h5>
+        <p class="card-text">Cloth Detergent at 185 per litre </p>
+        <input type="text"   #quan21 size="30"  value="" id="quan" placeholder=" Enter Quantity in unit" (keyup)="0"> <br>
+        <br>
+              <a [routerLink]="['/cart',  {id: 50 , quantity :quan21.value  } ]" class="btn btn-primary">Add to Cart</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/Images/dish.jpg" height="300" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Dish Washer </h5>
+        <p class="card-text">Dish Washer at Rs 30 per bottle</p>
+        <input type="text"   #quan22 size="30"  value="" id="quan" placeholder=" Enter Quantity in unit" (keyup)="0"> <br>
+        <br>
+              <a [routerLink]="['/cart',  {id: 51 , quantity :quan22.value  } ]" class="btn btn-primary">Add to Cart</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/Images/cold.jpg" height="300"class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Cold Creams</h5>
+        <p class="card-text">Cold Creams at Rs 140 per unit.</p>
+        <input type="text"   #quan23 size="30"  value="" id="quan" placeholder=" Enter Quantity in unit" (keyup)="0"> <br>
+        <br>
+              <a [routerLink]="['/cart',  {id:52 , quantity :quan23.value  } ]" class="btn btn-primary">Add to Cart</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+
+  <br>
+
+  </body>
