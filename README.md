@@ -2,7 +2,7 @@ You can visit the app on --->  https://niladri31.github.io/grocery-web-app-using
 
 
 
-<h2>About The project<h2>
+<h2>About The project</h2>
 This project is made in angular 8 using VS code . It is my Individual Project which was made as my design and analysis of algo assignment .
 
 My front end is made in HTML , CSS and BOOTSTRAP . I have made use bootstrap classes "cards" for making cards in which all my grocery items are listed. btn-primary for button , "table class for making table and rest of the items like forms etc are all made of html and css.I have made use of bootstrap validation for forms - 10 digits for mobile no. , 6 digits for pincode and rest are compulsory fields. One can not click the next button unless you made all field valid .
