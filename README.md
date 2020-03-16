@@ -1,4 +1,4 @@
-You can visit the app on --->  https://niladri31.github.io/grocery-web-app-using-angular/
+<h3>You can visit the app on ---></h3>  https://niladri31.github.io/grocery-web-app-using-angular/
 
 <h2>Screenshots</h2>
 
