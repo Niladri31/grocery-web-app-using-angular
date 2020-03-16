@@ -1,5 +1,11 @@
 You can visit the app on --->  https://niladri31.github.io/grocery-web-app-using-angular/
 
+<h2>Screenshots</h2>
+
+<img src="assets\Images\s1.png" alt="Italian Trulli">
+<img src="assets\Images\s2.png" alt="Italian Trulli">
+<img src="assets\Images\s3.png" alt="Italian Trulli">
+
 
 
 <h2>About The project</h2>
